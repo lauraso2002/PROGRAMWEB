@@ -1,0 +1,125 @@
+.wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    grid-gap: 2px;
+    background-color: rgba(253, 158, 248, 0.822);
+
+}
+.wrapper > * {
+    border: 2px solid black;
+    padding: 10px;
+    grid-column: col-start / span 12;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+	padding: 0;
+	
+}
+
+@media (min-width: 500px) {
+  .content {
+	grid-column: col-start / span 9;
+	background-color: rgb(150, 212, 236);
+  }
+  .side {
+	grid-column: col-start 10 / span 3;
+	background-color: rgb(245, 179, 242);
+  }
+  nav ul {
+	display: flex;
+	
+  }
+  nav ul li {
+    margin-right: 10px;
+    
+  }
+}
+
+@media (min-width: 700px) {
+  .main-nav {
+    grid-column: col-start / span 2;
+  }
+  .content {
+    grid-column: col-start 3 / span 7;
+  }
+  .side {
+    grid-column: col-start 10 / span 3;
+  }
+  nav ul {
+    flex-direction: column;
+  
+  }
+}
+
+
+
+/* cabezote */
+header {
+	background-color:aqua;
+	font-family: Arial;
+	padding: 0px;
+	margin: 0px;
+}
+header h1 {
+	margin: 0px;
+	padding: 10px;
+	font-size: 250%;
+	text-align: middle;
+}
+
+/* menu horizontal */
+.menu_hor {
+	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	overflow: hidden;
+  	
+}
+.menu_hor li {
+  float: left;
+  
+}
+.menu_hor li a {
+  display: block;
+  color: wheat;
+  text-align: center;
+  padding: 12px 14px;
+  text-decoration: none;
+}
+
+.menu_hor li:last-child {
+  border-right: none;
+}
+
+/* maquetación productos y banners */
+
+
+
+aside img {
+	
+	width: 100%;
+	margin-right: 10px;
+}
+article {
+	clear: both;
+	/*border-bottom: dashed gray 1px;*/
+}
+article img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+/* pie de página */
+footer {
+	clear: both;
+	background-color:aqua;
+	margin: 0px;
+	padding: 5px;
+	border-top: 2px solid black;
+	font-family: Arial;
+}
